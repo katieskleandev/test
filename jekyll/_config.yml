@@ -1,0 +1,12 @@
+url: "https://www.nowsup.com"
+
+name: nowsup
+
+source: jekyll  
+destination: dist
+host: 0.0.0.0
+exclude: 
+  - package.json
+  - package-lock.json
+  - node_modules
+  - gulpfile.js
