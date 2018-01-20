@@ -1,0 +1,289 @@
+/*!
+ * Bootstrap v4.0.0-beta.3 (https://getbootstrap.com)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+footer, main, section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+h1, h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* ********** */
+/* font faces */
+/* ********** */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora Regular'), local('Lora-Regular'), url(/fonts/lora-400.woff2) format('woff2'), url(/fonts/lora-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(/fonts/open-sans-400.woff2) format('woff2'), url(/fonts/open-sans-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(/fonts/open-sans-700.woff2) format('woff2'), url(/fonts/open-sans-700.ttf) format('truetype');
+}
+/** Generic **/
+h1, h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.75px;
+}
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+}
+h2 {
+  line-height: 29px;
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+li {
+  list-style-type: none;
+}
+ul {
+  padding: 0px;
+  margin: 0px -40px;
+}
+body {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+}
+.about, .our-services, .why-choose-us-1, .why-choose-us-2, .why-us, footer {
+  padding: 96px 40px;
+}
+/** Welcome **/
+.welcome {
+  padding-top: 36px;
+  background-size: cover;
+  background-position: center;
+  background-color: #153f89;
+  background-image: url('./images/header.jpg');
+  height: 100vh;
+}
+.logo {
+  display: block;
+  margin-bottom: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 240px;
+  height: 40px;
+}
+.welcome-header {
+  margin-bottom: 18px;
+}
+.welcome-sub-header {
+  max-width: 320px;
+  margin: auto;
+}
+.welcome h1, .welcome h2 {
+  text-align: center;
+  color: #042949;
+}
+/** About us **/
+.about {
+  background-color: #042949;
+  color: #D7D7D7;
+}
+.about h2 {
+  color: #1CADC8;
+}
+/** Picture **/
+.picture {
+  background-size: cover;
+  background-position: center;
+  background-image: url('./images/london-gherkin.jpg');
+  height: 320px;
+}
+/** Our services **/
+.our-services {
+  background-color: #EDF9FB;
+  color: #444444;
+}
+.our-services h2 {
+  color: #1CADC8;
+}
+.service-row {
+  background-color: #FFFFFF;
+  height: 160px;
+  padding: 20px 40px;
+  margin-bottom: 3px;
+}
+.service-index {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 10px;
+  color: #1CADC8;
+}
+.service-icon {
+  margin-left: auto;
+  width: 96px;
+}
+.service-text {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #272727;
+}
+.service-list {
+  margin-top: 64px;
+}
+.service-content {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/** Why choose us **/
+.why-choose-us-1 {
+  background-color: #1CADC8;
+  color: #ffffff;
+}
+.why-choose-us-2 {
+  background-color: #042949;
+  color: #ffffff;
+}
+.why-choose-us-icon {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 128px;
+  text-align: center;
+}
+/** Why us **/
+.why-us {
+  background-color: #EDF9FB;
+  color: #ffffff;
+}
+.why-us h2 {
+  color: #1CADC8;
+}
+.reason-row {
+  background-color: #FFFFFF;
+  height: 160px;
+  padding: 20px 40px;
+  margin-bottom: 3px;
+}
+.reason-content {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reason-text {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #272727;
+}
+/** Footer **/
+footer {
+  background-color: #1CADC8;
+  color: #ffffff;
+  font-family: 'Open Sans';
+  text-align: center;
+}
+address {
+  font-weight: 700;
+}
+.copyright {
+  margin-top: 128px;
+}
+.copyright-logo {
+  display: block;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 144px;
+  height: 24px;
+}
