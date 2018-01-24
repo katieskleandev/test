@@ -40,6 +40,13 @@ p {
   margin-bottom: 1rem;
 }
 
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
 ol,
 ul,
 dl {
@@ -85,9 +92,17 @@ ul ol {
   }
 }
 
-/* ********** */
-/* font faces */
-/* ********** */
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+/** Custom CSS **/
+/** Font Faces */
 @font-face {
   font-family: 'Lora';
   font-style: normal;
@@ -108,7 +123,7 @@ ul ol {
 }
 /** Generic **/
 h1, h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.75px;
@@ -130,7 +145,7 @@ ul {
   margin: 0px -40px;
 }
 body {
-  font-family: 'Lora', serif;
+  font-family: serif;
   font-size: 16px;
 }
 .about, .our-services, .why-choose-us-1, .why-choose-us-2, .why-us, footer {
@@ -188,24 +203,26 @@ body {
 .our-services h2 {
   color: #1CADC8;
 }
-.service-row {
+.service-row, .reason-row {
   background-color: #FFFFFF;
   height: 160px;
   padding: 20px 40px;
   margin-bottom: 3px;
 }
 .service-index {
-  font-family: 'Open Sans';
+  font-family: sans-serif;
   font-weight: 700;
   font-size: 10px;
   color: #1CADC8;
 }
 .service-icon {
-  margin-left: auto;
-  width: 96px;
+  padding-right: 16px;
+  width: 40%;
 }
 .service-text {
-  font-family: 'Open Sans';
+  width: 60%;
+  padding-left: 16px;
+  font-family: sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -215,8 +232,8 @@ body {
   margin-top: 64px;
 }
 .service-content {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -246,20 +263,20 @@ body {
 .why-us h2 {
   color: #1CADC8;
 }
-.reason-row {
-  background-color: #FFFFFF;
-  height: 160px;
-  padding: 20px 40px;
-  margin-bottom: 3px;
-}
 .reason-content {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
+.reason-icon {
+  width: 40%;
+  padding-right: 16px;
+}
 .reason-text {
-  font-family: 'Open Sans';
+  width: 60%;
+  padding-left: 16px;
+  font-family: sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -269,11 +286,18 @@ body {
 footer {
   background-color: #1CADC8;
   color: #ffffff;
-  font-family: 'Open Sans';
+  font-family: sans-serif;
   text-align: center;
 }
 address {
   font-weight: 700;
+}
+.address-icon {
+  vertical-align: middle;
+  width: 16px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  display: inline-block;
 }
 .copyright {
   margin-top: 128px;
@@ -286,4 +310,17 @@ address {
   text-align: center;
   width: 144px;
   height: 24px;
+}
+/** Font magic **/
+.fonts-loaded h1,
+.fonts-loaded h2,
+.fonts-loaded .service-index,
+.fonts-loaded .service-text,
+.fonts-loaded .reason-text,
+.fonts-loaded footer {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.fonts-loaded body {
+  font-family: 'Lora', serif;
 }
