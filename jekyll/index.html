@@ -39,9 +39,7 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', '{{ site.analytics_account }}');
-
   </script>
   {% endif %}
 
@@ -52,35 +50,42 @@
 
   <!-- Font face observer magic -->
   <script>
-        if(sessionStorage && sessionStorage.fontsLoaded){
-            var html = document.documentElement;
-            html.classList.add("fonts-loaded");
-        }
+    if(sessionStorage && sessionStorage.fontsLoaded){
+        var html = document.documentElement;
+        html.classList.add("fonts-loaded");
+    }
   </script>
 </head>
 <body>
 <main>
   <div class="container welcome">
-    <div class="logo">
-      {% include logo.svg %}
-    </div>
-    <div class="welcome-header">
-      <h1>Office Cleaning in London</h1>
-    </div>
-    <div class="welcome-sub-header">
-      <h2>High quality service at a cost clients can afford</h2>
+    <div>
+      <div class="welcome-logo">
+        {% include logo.svg %}
+      </div>
+      <div class="welcome-header">
+        <h1>Office Cleaning in London</h1>
+      </div>
+      <div class="welcome-sub-header">
+        <h2>High quality service at a cost clients can afford</h2>
+      </div>
     </div>
   </div>
-  <div class="container about">
-    <h2>About Kate's Klean</h2>
-    <p>We provide office cleaning services in London to a wide range of clients, from small to medium sized
-      companies right up to large multi-nationals and blue chip PLC’s. Whatever your business, organisation or
-      sector, we’ll adapt our cleaning services to match your needs.</p>
-    <p>We will discuss your requirements, design the perfect office cleaning specification and deliver the very
-      best service. We will continue to strive for cleaning excellence, enhancing the fabric of your building
-      whilst reducing our environmental impact. The obvious choice for office cleaning London.</p>
-  </div>
-  <div class="container picture">
+  <div class="container about-us">
+    <div class="row">
+      <div class="col-lg-6 about-us-text">
+        <h2>About Katie's Klean</h2>
+        <p>We provide office cleaning services in London to a wide range of clients, from small to medium sized
+          companies right up to large multi-nationals and blue chip PLC’s. Whatever your business, organisation or
+          sector, we’ll adapt our cleaning services to match your needs.</p>
+        <p>We will discuss your requirements, design the perfect office cleaning specification and deliver the very
+          best service. We will continue to strive for cleaning excellence, enhancing the fabric of your building
+          whilst reducing our environmental impact. The obvious choice for office cleaning London.</p>
+      </div>
+      <div class="col-lg-6 about-us-picture">
+        <div class="picture"></div>
+      </div>
+    </div>
   </div>
   <div class="container our-services">
     <h2>Our Services</h2>
@@ -88,238 +93,86 @@
       effective working environment for their staff. This is as much a belief as a reality. A belief that runs
       right through our company and into what we deliver for our customers. In addition to our traditional
       cleaning services, we also offer a complete range of support services.</p>
-    <ul class="service-list">
-      <li class="container service-row">
-        <div class="row">
-          <div class="col-12 service-index">
-            <span>01</span>
-          </div>
-        </div>
-        <div class="row service-content">
-          <div class="service-icon">
-            {% include daily-office-cleaning.svg %}
-          </div>
-          <div class="service-text align-self-center">
-            <span>Daily office cleaning</span>
-          </div>
-        </div>
-      </li>
-      <li class="container service-row">
-        <div class="row">
-          <div class="col-12 service-index">
-            <span>02</span>
-          </div>
-        </div>
-        <div class="row service-content">
-          <div class="service-icon">
-            {% include residential-cleaning.svg %}
-          </div>
-          <div class="service-text align-self-center">
-            <span>Residential cleaning</span>
-          </div>
-        </div>
-      </li>
-      <li class="container service-row">
-        <div class="row">
-          <div class="col-12 service-index">
-            <span>03</span>
-          </div>
-        </div>
-        <div class="row service-content">
-          <div class="service-icon">
-            {% include common-area-cleaning.svg %}
-          </div>
-          <div class="service-text align-self-center">
-            <span>Common area cleaning</span>
-          </div>
-        </div>
-      </li>
-      <li class="container service-row">
-        <div class="row">
-          <div class="col-12 service-index">
-            <span>04</span>
-          </div>
-        </div>
-        <div class="row service-content">
-          <div class="service-icon">
-            {% include carpet-cleaning.svg %}
-          </div>
-          <div class="service-text align-self-center">
-            <span>Carpet cleaning and upholstery</span>
-          </div>
-        </div>
-      </li>
-      <li class="container service-row">
-        <div class="row">
-          <div class="col-12 service-index">
-            <span>05</span>
-          </div>
-        </div>
-        <div class="row service-content">
-          <div class="service-icon">
-            {% include window-cleaning.svg %}
-          </div>
-          <div class="service-text align-self-center">
-            <span>Window cleaning</span>
-          </div>
-        </div>
-      </li>
-      <li class="container service-row">
-        <div class="row">
-          <div class="col-12 service-index">
-            <span>06</span>
-          </div>
-        </div>
-        <div class="row service-content">
-          <div class="service-icon">
-            {% include washroom-cleaning.svg %}
-          </div>
-          <div class="service-text align-self-center">
-            <span>Washroom and feminine hygiene</span>
-          </div>
-        </div>
-      </li>
-      <li class="container service-row">
-        <div class="row">
-          <div class="col-12 service-index">
-            <span>07</span>
-          </div>
-        </div>
-        <div class="row service-content">
-          <div class="service-icon">
-            {% include washroom-supplies.svg %}
-          </div>
-          <div class="service-text align-self-center">
-            <span>Washroom supplies</span>
-          </div>
-        </div>
-      </li>
-      <li class="container service-row">
-        <div class="row">
-          <div class="col-12 service-index">
-            <span>08</span>
-          </div>
-        </div>
-        <div class="row service-content">
-          <div class="service-icon">
-            {% include end-of-tenancy-for-offices.svg %}
-          </div>
-          <div class="service-text align-self-center">
-            <span>End of tenancy for offices</span>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div class="container why-choose-us-1">
-    <div>
-      <div class="why-choose-us-icon">
-        {% include why-choose-us.svg %}
+    <div class="service-list">
+      <div class="row">
+        {% include service-element.html text="Daily office cleaning" icon="daily-office-cleaning" %}
+        {% include service-element.html text="Residential cleaning" icon="residential-cleaning" %}
+        {% include service-element.html text="Common area cleaning" icon="common-area-cleaning" %}
+        {% include service-element.html text="Carpet cleaning and upholstery" icon="carpet-cleaning" %}
+        {% include service-element.html text="Window cleaning" icon="window-cleaning" %}
+        {% include service-element.html text="Washroom and feminine hygiene" icon="washroom-cleaning" %}
+        {% include service-element.html text="Washroom supplies" icon="washroom-supplies" %}
+        {% include service-element.html text="End of tenancy for offices" icon="end-of-tenancy-for-offices" %}
       </div>
-      <span>Our customers choose to work with us because we are a well-trusted, established business that provides a range of services and benefits.</span>
     </div>
   </div>
-  <div class="container why-choose-us-2">
-    <div>
-      <div class="why-choose-us-icon">
-        {% include why-choose-us-2.svg %}
+  <div class="container why-choose-us">
+    <div class="row">
+      <div class="col-lg-6 why-choose-us-1">
+        <div class="row">
+          <div class="col-lg-3 why-choose-us-icon">
+            {% include why-choose-us.svg %}
+          </div>
+          <div class="col-lg-9 align-self-center">
+            <span>Our customers choose to work with us because we are a well-trusted, established business that provides a range of services and benefits.</span>
+          </div>
+        </div>
       </div>
-      <span>We provide an affordable, trustworthy and personal service and pride ourselves on our close attention to details whether you want a one-off clean or you become one of our long term regular customer.</span>
+      <div class="col-lg-6 why-choose-us-2">
+        <div class="row">
+          <div class="col-lg-3 why-choose-us-icon">
+            {% include why-choose-us-2.svg %}
+          </div>
+          <div class="col-lg-9 align-self-center">
+            <span>We provide an affordable, trustworthy and personal service and pride ourselves on our close attention to details whether you want a one-off clean or you become one of our long term regular customer.</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="container why-us">
-    <div>
-      <h2>Why us?</h2>
-      <ul class="reason-list">
-        <li class="container reason-row">
-          <div class="row reason-content">
-            <div class="reason-icon">
-              {% include fair.svg %}
-            </div>
-            <div class="reason-text align-self-center">
-              <span>Fair, friendly, flexible</span>
-            </div>
-          </div>
-        </li>
-        <li class="container service-row">
-          <div class="row reason-content">
-            <div class="reason-icon">
-              {% include honest.svg %}
-            </div>
-            <div class="reason-text align-self-center">
-              <span>Honest, friendly, reliably workers</span>
-            </div>
-          </div>
-        </li>
-        <li class="container service-row">
-          <div class="row reason-content">
-            <div class="reason-icon">
-              {% include reasonable.svg %}
-            </div>
-            <div class="reason-text align-self-center">
-              <span>Reasonable competitive rates</span>
-            </div>
-          </div>
-        </li>
-        <li class="container service-row">
-          <div class="row reason-content">
-            <div class="reason-icon">
-              {% include insured.svg %}
-            </div>
-            <div class="reason-text align-self-center">
-              <span>All our services are full insured</span>
-            </div>
-          </div>
-        </li>
-      </ul>
+    <h2>Why us?</h2>
+    <div class="reason-list">
+      <div class="row">
+        {% include reason-element.html text="Fair, friendly, flexible" icon="fair" %}
+        {% include reason-element.html text="Honest, friendly, reliably workers" icon="honest" %}
+        {% include reason-element.html text="Reasonable competitive rates" icon="reasonable" %}
+        {% include reason-element.html text="All our services are full insured" icon="insured" %}
+      </div>
     </div>
   </div>
-  <footer class="container">
-    <div>
-      <address>
-        <div>
-          <div class="address-icon">{% include phone.svg %}</div>
-          <span>0800 000 000</span>
-        </div>
-        <div>
-          <div class="address-icon">{% include email.svg %}</div>
-          <span>info@katiesklean.co.uk</span>
-        </div>
-        <div>
-          <div class="address-icon">{% include map.svg %}</div>
-          <span>XX York Street, Westminster, London</span>
-        </div>
-      </address>
-      <div class="copyright">
+  <div class="container footer">
+    <div class="row">
+      <div class="col-12 col-lg-6 address">
+        <address>
+          <div class="address-element">
+            <div class="address-icon">{% include phone.svg %}</div>
+            <span>0800 000 000</span>
+          </div>
+          <div class="address-element">
+            <div class="address-icon">{% include email.svg %}</div>
+            <span>info@katiesklean.co.uk</span>
+          </div>
+          <div class="address-element">
+            <div class="address-icon">{% include map.svg %}</div>
+            <span>XX York Street, Westminster, London</span>
+          </div>
+        </address>
+      </div>
+      <div class="col-12 col-lg-6 copyright">
         <div class="copyright-logo">
           {% include logo.svg %}
         </div>
-        <div>
+        <div class="copyright-text">
           <span>Copyright © 2018 Katie's Klean Ltd</span>
         </div>
-        <div>
+        <div class="copyright-text">
           <span>All rights reserved.</span>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
 </main>
-<script defer src="/main.js"></script>
-<noscript id="deferred-styles">
-  <link rel="stylesheet" href="main.css">
-</noscript>
-<script>
-    var loadDeferredStyles = function() {
-      var addStylesNode = document.getElementById("deferred-styles");
-      var replacement = document.createElement("div");
-      replacement.innerHTML = addStylesNode.textContent;
-      document.body.appendChild(replacement)
-      addStylesNode.parentElement.removeChild(addStylesNode);
-    };
-    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-    else window.addEventListener('load', loadDeferredStyles);
-</script>
+{% include deferred-resources.html %}
 </body>
 </html>

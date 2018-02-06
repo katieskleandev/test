@@ -8924,12 +8924,8 @@ h1, h2 {
   text-transform: uppercase;
   letter-spacing: -0.75px;
 }
-h1 {
-  font-size: 40px;
-  line-height: 40px;
-}
 h2 {
-  line-height: 29px;
+  line-height: 32px;
   font-size: 26px;
   margin-bottom: 24px;
 }
@@ -8942,21 +8938,27 @@ ul {
 }
 body {
   font-family: serif;
-  font-size: 16px;
+  font-size: 17px;
+  line-height: 23px;
+  background-color: #EAF5FF;
 }
-.about, .our-services, .why-choose-us-1, .why-choose-us-2, .why-us, footer {
-  padding: 96px 40px;
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+  max-width: 1280px;
 }
 /** Welcome **/
 .welcome {
-  padding-top: 36px;
+  padding-top: 40px;
   background-size: cover;
   background-position: center;
   background-color: #153f89;
-  background-image: url('./images/header.jpg');
-  height: 100vh;
 }
-.logo {
+.welcome-logo {
   display: block;
   margin-bottom: 160px;
   margin-left: auto;
@@ -8969,27 +8971,141 @@ body {
   margin-bottom: 18px;
 }
 .welcome-sub-header {
-  max-width: 320px;
   margin: auto;
 }
 .welcome h1, .welcome h2 {
   text-align: center;
   color: #042949;
 }
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 70px;
+    line-height: 66px;
+  }
+  .about-us, .our-services, .why-choose-us-1, .why-choose-us-2, .why-us, .footer {
+    padding: 78px 60px;
+  }
+  .welcome {
+    background-image: url('./images/header-1280-2x.jpg');
+    height: 600px;
+  }
+  .welcome-header {
+    max-width: 700;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .welcome-sub-header {
+    max-width: 500px;
+  }
+  .about-us {
+    margin-bottom: -125px;
+  }
+  .about-us-text {
+    padding-left: 24px;
+  }
+  .about-us-picture {
+    text-align: left;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+  .picture {
+    background-image: url('./images/gherkin-1280-2x.jpg');
+    height: 428px;
+    width: 560px;
+  }
+  .our-services {
+    padding-top: 135px;
+  }
+  .service-row, .reason-row {
+    border-left: 3px solid #EDF9FB;
+    background-color: #FFFFFF;
+    height: 150px;
+    padding: 20px 40px;
+    border-bottom: 3px solid #EDF9FB;
+  }
+  .address {
+    text-align: right;
+  }
+  .copyright {
+    text-align: left;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+}
+@media (max-width: 640px) {
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .about-us, .our-services, .why-choose-us-1, .why-choose-us-2, .why-us, .footer {
+    padding: 72px 32px;
+  }
+  .welcome {
+    background-image: url('./images/header-640-2x.jpg');
+    height: 100vh;
+  }
+  .welcome-header {
+  }
+  .welcome-sub-header {
+    max-width: 320px;
+    padding: 0px 16px;
+  }
+  .about-us {
+    padding-bottom: 0px;
+  }
+  .about-us-picture {
+    margin-left: -32px;
+    margin-right: -32px;
+    margin-top: 72px;
+  }
+  .picture {
+    background-image: url('./images/gherkin-640-2x.jpg');
+    height: 280px;
+    width: 100vw;
+  }
+  .our-services, .why-us {
+    padding-bottom: 36px;
+  }
+  .service-list {
+    padding-top: 36px;
+    margin-left: -17px;
+    margin-right: -17px;
+  }
+  .service-row, .reason-row {
+    background-color: #FFFFFF;
+    height: 128px;
+    padding: 16px 32px;
+    border-bottom: 3px solid #EDF9FB;
+  }
+  .why-choose-us-icon {
+    margin-bottom: 36px;
+  }
+  .reason-list {
+    margin-left: -17px;
+    margin-right: -17px;
+  }
+  .copyright-logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 96px;
+  }
+}
 /** About us **/
-.about {
+.about-us {
   background-color: #042949;
   color: #D7D7D7;
 }
-.about h2 {
+.about-us-text {
+}
+.about-us-text h2 {
   color: #1CADC8;
 }
 /** Picture **/
 .picture {
   background-size: cover;
   background-position: center;
-  background-image: url('./images/london-gherkin.jpg');
-  height: 320px;
 }
 /** Our services **/
 .our-services {
@@ -8999,24 +9115,12 @@ body {
 .our-services h2 {
   color: #1CADC8;
 }
-.service-row, .reason-row {
-  background-color: #FFFFFF;
-  height: 160px;
-  padding: 20px 40px;
-  margin-bottom: 3px;
-}
-.service-index {
-  font-family: sans-serif;
-  font-weight: 700;
-  font-size: 10px;
-  color: #1CADC8;
-}
 .service-icon {
   padding-right: 16px;
-  width: 40%;
+  width: 50%;
 }
 .service-text {
-  width: 60%;
+  width: 50%;
   padding-left: 16px;
   font-family: sans-serif;
   font-weight: 700;
@@ -9025,7 +9129,7 @@ body {
   color: #272727;
 }
 .service-list {
-  margin-top: 64px;
+  margin-top: 32px;
 }
 .service-content {
   padding-left: 20px;
@@ -9044,8 +9148,6 @@ body {
 }
 .why-choose-us-icon {
   display: block;
-  margin-top: 32px;
-  margin-bottom: 64px;
   margin-left: auto;
   margin-right: auto;
   height: 128px;
@@ -9079,14 +9181,17 @@ body {
   color: #272727;
 }
 /** Footer **/
-footer {
+.footer {
   background-color: #1CADC8;
   color: #ffffff;
   font-family: sans-serif;
   text-align: center;
 }
-address {
+.address {
   font-weight: 700;
+}
+.address-element {
+  margin-bottom: 12px;
 }
 .address-icon {
   vertical-align: middle;
@@ -9095,17 +9200,18 @@ address {
   margin-bottom: 4px;
   display: inline-block;
 }
+
 .copyright {
-  margin-top: 128px;
+  margin-top: 0px;
 }
 .copyright-logo {
   display: block;
   margin-bottom: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
   width: 144px;
   height: 24px;
+}
+.copyright-text {
+  font-size: 13px;
 }
 /** Font magic **/
 .fonts-loaded h1,
@@ -9113,7 +9219,7 @@ address {
 .fonts-loaded .service-index,
 .fonts-loaded .service-text,
 .fonts-loaded .reason-text,
-.fonts-loaded footer {
+.fonts-loaded .footer {
   font-family: 'Open Sans', sans-serif;
 }
 
