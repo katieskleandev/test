@@ -27,10 +27,10 @@
   --light: #f8f9fa;
   --dark: #343a40;
   --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
+  --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
+  --breakpoint-xl: 1280px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -574,9 +574,9 @@ pre code {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .container {
-    max-width: 540px;
+    max-width: 604px;
   }
 }
 
@@ -592,9 +592,9 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .container {
-    max-width: 1140px;
+    max-width: 1220px;
   }
 }
 
@@ -863,7 +863,7 @@ pre code {
   margin-left: 91.666667%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .col-sm {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -1436,7 +1436,7 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .col-xl {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -2334,7 +2334,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   width: 100%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .form-inline label {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3941,7 +3941,7 @@ tbody.collapse.show {
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .navbar-expand-sm {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -4109,7 +4109,7 @@ tbody.collapse.show {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .navbar-expand-xl {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -4450,7 +4450,7 @@ tbody.collapse.show {
   margin-bottom: 15px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .card-deck {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -4490,7 +4490,7 @@ tbody.collapse.show {
   margin-bottom: 15px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .card-group {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -4559,7 +4559,7 @@ tbody.collapse.show {
   margin-bottom: 0.75rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .card-columns {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -4818,7 +4818,7 @@ tbody.collapse.show {
   border-radius: 0.3rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .jumbotron {
     padding: 4rem 2rem;
   }
@@ -5491,7 +5491,7 @@ button.close {
   overflow: scroll;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
@@ -6246,7 +6246,7 @@ button.bg-dark:hover {
   display: inline-flex !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .d-sm-none {
     display: none !important;
   }
@@ -6348,7 +6348,7 @@ button.bg-dark:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .d-xl-none {
     display: none !important;
   }
@@ -6623,7 +6623,7 @@ button.bg-dark:hover {
   align-self: stretch !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .flex-sm-row {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -7031,7 +7031,7 @@ button.bg-dark:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .flex-xl-row {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -7179,7 +7179,7 @@ button.bg-dark:hover {
   float: none !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .float-sm-left {
     float: left !important;
   }
@@ -7215,7 +7215,7 @@ button.bg-dark:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .float-xl-left {
     float: left !important;
   }
@@ -7649,7 +7649,7 @@ button.bg-dark:hover {
   margin-left: auto !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .m-sm-0 {
     margin: 0 !important;
   }
@@ -8399,7 +8399,7 @@ button.bg-dark:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .m-xl-0 {
     margin: 0 !important;
   }
@@ -8675,7 +8675,7 @@ button.bg-dark:hover {
   text-align: center !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .text-sm-left {
     text-align: left !important;
   }
@@ -8711,7 +8711,7 @@ button.bg-dark:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .text-xl-left {
     text-align: left !important;
   }
@@ -9034,6 +9034,69 @@ main {
     order: -1;
   }
 }
+@media (max-width: 1280px) and (min-width:640px) {
+  h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .about-us, .our-services, .why-choose-us-1, .why-choose-us-2, .why-us, .footer {
+    padding: 96px 32px;
+  }
+  .welcome {
+    background-image: url('./images/header-1280-2x.jpg');
+    height: 600px;
+  }
+  .welcome-header {
+    max-width: 580;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .welcome-sub-header {
+    max-width: 320px;
+    padding: 0px 16px;
+  }
+  .about-us-picture {
+    margin-top: 48px;
+  }
+  .about-us {
+    margin-bottom: -150px;
+  }
+  .our-services {
+    padding-top: 125px;
+  }
+  .picture {
+    background-image: url('./images/gherkin-640-2x.jpg');
+    height: 380px;
+    width: 100%;
+  }
+  .our-services, .why-us {
+    padding-bottom: 36px;
+  }
+  .service-list {
+    padding-top: 36px;
+    margin-left: -17px;
+    margin-right: -17px;
+  }
+  .service-row, .reason-row {
+    border-left: 3px solid #EDF9FB;
+    background-color: #FFFFFF;
+    height: 150px;
+    padding: 10px 10px;
+    border-bottom: 3px solid #EDF9FB;
+  }
+  .why-choose-us-icon {
+    margin-bottom: 48px;
+  }
+  .reason-list {
+    margin-left: -17px;
+    margin-right: -17px;
+  }
+  .copyright-logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 96px;
+  }
+}
 @media (max-width: 640px) {
   h1 {
     font-size: 40px;
@@ -9089,7 +9152,7 @@ main {
   .copyright-logo {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 96px;
+    margin-top: 72px;
   }
 }
 /** About us **/

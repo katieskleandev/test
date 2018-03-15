@@ -68,27 +68,15 @@ ul ol {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .container {
-    max-width: 540px;
+    max-width: 604px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
+    max-width: 1220px;
   }
 }
 
@@ -101,7 +89,7 @@ ul ol {
   margin-right: -15px;
   margin-left: -15px;
 }
-.col-12, col-lg-3, .col-lg-6, col-lg-9 {
+.col-12, .col-sm-6, col-sm-3, col-sm-9, .col-xl-6 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -116,20 +104,41 @@ ul ol {
   max-width: 100%;
 }
 
-@media (min-width: 992px) {
-  .col-lg-3 {
+@media (min-width: 640px) {
+  .col-sm-3 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
-  .col-lg-6 {
+  .col-sm-6 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
-  .col-lg-9 {
+  .col-sm-9 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .col-xl-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-xl-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-xl-9 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
@@ -274,6 +283,69 @@ main {
     order: -1;
   }
 }
+@media (max-width: 1280px) and (min-width:640px) {
+  h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .about-us, .our-services, .why-choose-us-1, .why-choose-us-2, .why-us, .footer {
+    padding: 96px 32px;
+  }
+  .welcome {
+    background-image: url('./images/header-1280-2x.jpg');
+    height: 600px;
+  }
+  .welcome-header {
+    max-width: 580;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .welcome-sub-header {
+    max-width: 320px;
+    padding: 0px 16px;
+  }
+  .about-us-picture {
+    margin-top: 48px;
+  }
+  .about-us {
+    margin-bottom: -150px;
+  }
+  .our-services {
+    padding-top: 125px;
+  }
+  .picture {
+    background-image: url('./images/gherkin-640-2x.jpg');
+    height: 380px;
+    width: 100%;
+  }
+  .our-services, .why-us {
+    padding-bottom: 36px;
+  }
+  .service-list {
+    padding-top: 36px;
+    margin-left: -17px;
+    margin-right: -17px;
+  }
+  .service-row, .reason-row {
+    border-left: 3px solid #EDF9FB;
+    background-color: #FFFFFF;
+    height: 150px;
+    padding: 10px 10px;
+    border-bottom: 3px solid #EDF9FB;
+  }
+  .why-choose-us-icon {
+    margin-bottom: 48px;
+  }
+  .reason-list {
+    margin-left: -17px;
+    margin-right: -17px;
+  }
+  .copyright-logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 96px;
+  }
+}
 @media (max-width: 640px) {
   h1 {
     font-size: 40px;
@@ -329,7 +401,7 @@ main {
   .copyright-logo {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 96px;
+    margin-top: 72px;
   }
 }
 /** About us **/
